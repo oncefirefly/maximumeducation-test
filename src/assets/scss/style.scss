@@ -46,9 +46,16 @@ body {
       margin-top: 15px;
 
       .request-theme__options {
+        margin: 10px 0;
         max-width: 350px;
         display: flex;
         flex-direction: column;
+        gap: 10px;
+
+        .request-theme__option {
+          display: flex;
+          flex-direction: row;
+        }
       }
 
       .request-theme__other {

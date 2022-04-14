@@ -47,7 +47,11 @@
             <span class="required">*</span>
           </label>
           <div class="request-theme__options">
-            <div v-for="theme in requestThemesList" :key="theme.id">
+            <div
+              class="request-theme__option"
+              v-for="theme in requestThemesList"
+              :key="theme.id"
+            >
               <input
                 v-model="pickedTheme"
                 @click="resetCustomRequestTheme"
