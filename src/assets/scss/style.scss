@@ -1,0 +1,99 @@
+html,
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+
+  .required {
+    color: red;
+  }
+
+  .title {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    padding: 20px 20px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    .select-city {
+      display: flex;
+      flex-direction: column;
+
+      .select-city__options {
+        margin-top: 15px;
+        padding: 5px 0;
+        width: 150px;
+
+        .options__placeholder {
+          color: gray;
+          display: none;
+        }
+      }
+    }
+
+    .request-theme {
+      margin-top: 15px;
+
+      .request-theme__options {
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .request-theme__other {
+        margin-top: 5px;
+      }
+    }
+
+    .problem-desc {
+      margin-top: 15px;
+
+      display: flex;
+      flex-direction: column;
+
+      .problem-desc__text {
+        max-width: 250px;
+      }
+    }
+
+    .upload-file {
+      margin-top: 15px;
+
+      .upload-file__desc {
+        margin: 5px 0;
+        font-size: 12px;
+        color: gray;
+      }
+    }
+
+    .submit {
+      margin-top: 30px;
+
+      .submit__btn {
+        background-color: orangered;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      :disabled {
+        background-color: gray;
+        cursor: default;
+      }
+    }
+  }
+
+  .success__content {
+    text-align: center;
+  }
+}
